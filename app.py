@@ -31,6 +31,7 @@ def predict(input_data: IrisInput):
     return {"prediction": result}
 
 @app.get("/")
+@app.head("/")
 
 def health_check():
-    return{"status":"API is runing"}
+    return {"status": "API is running"}
